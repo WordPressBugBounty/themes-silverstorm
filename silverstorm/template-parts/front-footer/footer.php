@@ -1,5 +1,5 @@
 <?php $component = \ColibriWP\Theme\View::getData( 'component' ); ?>
-    <div data-enabled="<?php echo silverstorm_footer_parallax_is_enabled();?>" data-colibri-component="footer-parallax" data-colibri-id="1840-f1" class="page-footer style-62 style-local-1840-f1 position-relative">
+<div data-enabled="false" data-colibri-component="footer-parallax" data-colibri-id="1840-f1" class="page-footer style-62 style-local-1840-f1 position-relative">
   <div data-colibri-component="section" data-colibri-id="1840-f2" id="copyright" class="h-section h-section-global-spacing d-flex align-items-lg-center align-items-md-center align-items-center style-63 style-local-1840-f2 position-relative">
     <div class="h-section-grid-container h-section-boxed-container">
       <div data-colibri-id="1840-f3" class="h-row-container gutters-row-lg-1 gutters-row-md-1 gutters-row-2 gutters-row-v-lg-1 gutters-row-v-md-1 gutters-row-v-2 style-64 style-local-1840-f3 position-relative">

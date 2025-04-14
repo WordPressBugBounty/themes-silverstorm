@@ -107,35 +107,35 @@ class NavBarStyle extends PartialComponent {
 					)*/
 				),
 
-				"{$prefix}separator1" => array(
-					'default' => '',
-					'control' => array(
-						'label'       => '',
-						'type'        => 'separator',
-						'section'     => 'nav_bar',
-						'colibri_tab' => $colibri_tab,
-						'priority'    => $priority ++,
-					),
-				),
+                /*"{$prefix}separator1" => array(
+                    'default' => '',
+                    'control' => array(
+                        'label'       => '',
+                        'type'        => 'separator',
+                        'section'     => 'nav_bar',
+                        'colibri_tab' => $colibri_tab,
+                        'priority'    => $priority ++,
+                    ),
+                ),
 
-				"{$prefix}props.sticky" => array(
-					'default'   => Defaults::get( "{$prefix}props.sticky" ),
-					'control'   => array(
-						'label'       => Translations::get( 'stick_to_top' ),
-						'type'        => 'switch',
-						'section'     => $section,
-						'colibri_tab' => $colibri_tab,
-						'priority'    => $priority ++,
-					),
-					'js_output' => array(
-						array(
-							'selector' => "{$this->selector}#navigation",
-							'action'   => "colibri-navigation-toggle-sticky",
-						),
+                "{$prefix}props.sticky" => array(
+                    'default'   => Defaults::get( "{$prefix}props.sticky" ),
+                    'control'   => array(
+                        'label'       => Translations::get( 'stick_to_top' ),
+                        'type'        => 'switch',
+                        'section'     => $section,
+                        'colibri_tab' => $colibri_tab,
+                        'priority'    => $priority ++,
+                    ),
+                    'js_output' => array(
+                        array(
+                            'selector' => "{$this->selector}#navigation",
+                            'action'   => "colibri-navigation-toggle-sticky",
+                        ),
 
-					),
+                    ),
 
-				),
+                ),*/
 
 //				"{$prefix}props.overlap" => array(
 //					'default'   =>  Defaults::get( "{$prefix}props.overlap" ),
