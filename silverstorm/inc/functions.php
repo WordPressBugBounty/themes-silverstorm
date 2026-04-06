@@ -508,3 +508,4 @@ function silverstorm_has_fresh_site() {
 
 
 
+require_once __DIR__ . "/siteleads-integration/index.php";
