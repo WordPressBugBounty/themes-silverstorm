@@ -128,7 +128,11 @@ class PluginsManager {
 	
     function activatePluginAction() {
         check_ajax_referer( 'colibri_plugin_install_activate_nonce');
-		$slug = isset( $_REQUEST['slug'] ) ? $_REQUEST['slug'] : false;
+		$slug = isset( $_REQUEST['slug'] ) ? wp_unslash( $_REQUEST['slug'] ) : false;
+
+		if ( ! current_user_can( 'activate_plugin', $slug ) ) {
+			wp_send_json_error( array( 'error' => 'activate_plugin_capability_missing' ) );
+		}
 
 		if ( $slug && ( $path = $this->getPluginData( "{$slug}.plugin_path" ) ) ) {
 			$ac   = get_option( 'active_plugins' );
